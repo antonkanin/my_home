@@ -8,11 +8,13 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'vim-syntactic/syntactic'
 Plugin 'hdima/python-syntax'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tomasiser/vim-code-dark'
 
 call vundle#end()
 filetype plugin indent on
 
 set cursorline
+colorscheme codedark
 
 set wildmenu
 
