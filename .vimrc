@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'hdima/python-syntax'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tomasiser/vim-code-dark'
+Plugin 'Vimjas/vim-python-pep8-indent'
 
 call vundle#end()
 filetype plugin indent on
