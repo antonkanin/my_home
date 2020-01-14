@@ -11,6 +11,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'preservim/nerdcommenter'
+Plugin 'beautify-web/js-beautify'
 
 call vundle#end()
 filetype plugin indent on
