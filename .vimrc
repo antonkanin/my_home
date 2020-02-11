@@ -12,6 +12,7 @@ Plugin 'tomasiser/vim-code-dark'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'preservim/nerdcommenter'
 Plugin 'beautify-web/js-beautify'
+Plugin 'rhysd/vim-clang-format'
 
 call vundle#end()
 filetype plugin indent on
