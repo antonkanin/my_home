@@ -34,5 +34,7 @@ set autoindent
 
 set cursorline
 
+set cinoptions+=g0 "C++ formatting, see :help cino-g
+
 let python_highlight_all = 1
 syntax on
