@@ -38,3 +38,6 @@ set cinoptions+=g0 "C++ formatting, see :help cino-g
 
 let python_highlight_all = 1
 syntax on
+
+"highlight special characters, use :set list / :set nolist to toggle on / off
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
