@@ -38,6 +38,11 @@ set cinoptions+=g0 "C++ formatting, see :help cino-g
 
 let python_highlight_all = 1
 syntax on
+"
+" highlight search text with yellow background and black foreground
+hi Search ctermfg=Black
+hi Search ctermbg=Yellow
 
 "highlight special characters, use :set list / :set nolist to toggle on / off
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+
