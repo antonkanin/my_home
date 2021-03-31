@@ -1,11 +1,18 @@
 set nocompatible
 filetype off
-set shellslash " Windows-only, converts unix style slash separators
+if has('win32')
+  set shellslash " Windows-only, converts unix style slash separators
+endif
 
 let g:netrw_liststyle=3 " tree view
 
-set rtp+=~/vimfiles/bundle/Vundle.vim
-call vundle#begin('~/vimfiles/bundle')
+if has('win32')
+  set rtp+=~/vimfiles/bundle/Vundle.vim
+  call vundle#begin('~/vimfiles/bundle')
+else
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
+endif
 
 Plugin 'VundleVim/Vundle.vim'
 " Plugin 'vim-syntactic/syntactic'
@@ -14,7 +21,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'preservim/nerdcommenter'
-"Plugin 'beautify-web/js-beautify'
+" Plugin 'beautify-web/js-beautify'
 Plugin 'rhysd/vim-clang-format'
 "Plugin 'cdelledonne/vim-cmake'
 Plugin 'vhdirk/vim-cmake'
@@ -73,7 +80,7 @@ set statusline +=%2*/%L%*               "total lines
 set statusline +=%1*%4v\ %*             "virtual column number
 set statusline +=%2*0x%04B\ %*          "character under cursor
 
-cd d:/Projects/TappyPotatoCpp " default directory
+" cd d:/Projects/TappyPotatoCpp " default directory
 
 set guioptions-=L " disable vertical scrollbar
 set guioptions-=T " disable gVim toolbar
